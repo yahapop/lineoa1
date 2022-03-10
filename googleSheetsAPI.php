@@ -16,7 +16,7 @@
 	$userId = $deCode['events'][0]['source']['userId'];
 	$type = $deCode['events'][0]['type'];
 
-	$token = "LINE-ACCESS-TOKEN";
+	$token = "940261796733ea1967337d50b1e724b2";
 
 	$LINEProfileDatas['url'] = "https://api.line.me/v2/bot/profile/".$userId;
   	$LINEProfileDatas['token'] = $token;
@@ -32,13 +32,13 @@
 	$client = new \Google_Client();
     $client->setApplicationName('Google Sheets API PHP Quickstart');
     $client->setScopes(\Google_Service_Sheets::SPREADSHEETS);
-    $client->setAuthConfig(__DIR__.'/amiable-octane-272311-e2e44b0f4852.json');
+    $client->setAuthConfig(__DIR__.'/lineoa-343703-d2c7498ab449.json');
     $client->setAccessType('offline');
     // $client->setPrompt('select_account consent');
 
     $service = new \Google_Service_Sheets($client);
 
-    $spreadsheetId = "GOOGLE-SHEETS-ID";
+    $spreadsheetId = "1yTb3NyO6aJTX5TKlqPq5daCej0Q4VF_UbYQHZd0L00U";
 
     // updateData($spreadsheetId,$service);
     insertData($spreadsheetId,$service,$displayName);
